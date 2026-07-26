@@ -56,3 +56,6 @@ app.post('/create-checkout-session', async (req, res) => {
 
   res.json({ url: session.url });
 });
+app.get('/buy', (req, res) => {
+  res.send('Your buy route is working ');
+});
